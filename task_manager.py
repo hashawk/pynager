@@ -6,20 +6,19 @@ def manage_tasks(username):
         3 -- Update Task\n\
         4 -- View Task Status"
     )
-    action = input(":")
+    action = input(':')
 
-    match action:
-        case "1":
-            print(1)
-        case "2":
-            print(2)
-        case "3":
-            print(2)
-        case "4":
-            print(2)
-        case _:
-            print("Invalid command, try again")
-            manage_tasks(username)
+    if action == '1':
+        print(1)
+    elif action == '2':
+        print(2)
+    elif action == '3':
+        print(2)
+    elif action == '4':
+        print(2)
+    else: 
+        print("Invalid command, try again")
+        manage_tasks(username)
 
 def login():
     print("Sign-in")
